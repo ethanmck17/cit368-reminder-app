@@ -1,0 +1,186 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>TODO: The List That Follows You Everywhere</title>
+ <!--Project by     -->
+ <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <style>
+  
+   </style>
+   </head>
+   <body>
+   
+   <!--bootstrap navBar-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light float-right">
+  
+      
+	  <a class="btn btn-secondary" href="index.html" role="button">Logout</a>
+
+</nav>
+   
+   </header>
+   <main class="container">
+	
+   <table class="table table-striped">
+  <thead>
+    <tr>
+	
+      <th scope="col">#</th>
+      <th scope="col">Task</th>
+      <th scope="col">Location</th>
+      <th scope="col">Due By</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+	  <div class="input">
+			<input type="checkbox" class="input" id="chkbox2">
+	    </div>
+	  </th>
+      <td>Lunch at Friendly's</td>
+      <td>Friendly's</td>
+      <td>11:15a</td>
+    </tr>
+    <tr>
+      <th scope="row">
+		<div class="input">
+			<input type="checkbox" class="input" id="chkbox3">
+	    </div>
+	  </th>
+      <td>TCP Reports</td>
+      <td>work</td>
+      <td>8:00a</td>
+    </tr>
+    <tr>
+      <th scope="row">
+		<div class="input">
+			<input type="checkbox" class="input" id="chkbox">
+	    </div>
+	  </th>
+      <td>Meeting Bob and Dave</td>
+      <td>Forest</td>
+      <td>2:00pm</td>
+	  
+		
+    </tr>
+	
+  </tbody>
+</table>
+<div class="inline">
+<input class="btn btn-secondary mx-2 float-left" type="button" value="Add Task" data-toggle="modal" data-target="#add_new_modal">
+<input class="btn btn-dark mx-2 float-right" type="Submit" value="delete"> 
+		<input class="btn btn-primary mx-2 float-right" type="submit" value="Completed">
+		
+	</div>
+  </main>
+  <footer>
+	<div class="page-footer pt-5"> 
+		<div class="container"><span>A Subsidary of ...</span> <span><a href="mailto:blv3@pct.edu">Contact Us</a></span></div>
+		
+		
+		<!--modal_add_task-->
+		<div class="modal fade" id="add_new_modal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Task</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!--ad_task_form-->
+		<form>
+		<div class = container>
+  <div class="form-row ">
+  
+   <label class="col-form-label" for="inputEmail4">Task</label>
+    <div class="form-group col-md-10">
+     
+      <input type="text" class="form-control" id="inputEmail4" placeholder="task">
+    </div>
+	</div>
+	<div class="form-row">
+	<label for="inputHour" class="col-form-label">Due By</label>
+    <div class="form-group col-md-3">
+	
+      
+      <select id="inputState" class="form-control">
+        <option selected>12</option>
+        <option>1</option>
+		</select>
+		</div>
+		<div class="prepend" form-group "> : </div>
+		<div class="form-group col-med-3">
+	  <select id=" inputMin" class="form-control">
+        <option selected>00</option>
+        <option>15</option>
+		 <option>30</option>
+		  <option>45</option>
+		  </select>
+		  </div>
+		<div class="form-check input-prepend">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        pm
+      </label>
+    </div>  
+		</div>
+
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Notes</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+ </form>
+    </div>
+  </div>
+ 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!--main bootstrap-->
+		
+	</div>
+   </footer>
+   
+    <!--Bootstrap Javascript-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/validateLogin.js"></script>
+   </body>
+</html>

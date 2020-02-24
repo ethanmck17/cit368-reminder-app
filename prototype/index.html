@@ -1,0 +1,107 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>TODO: The List That Follows You Everywhere</title>
+ <!--Project by     -->
+ <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <style>
+  
+   </style>
+   </head>
+   <body>
+   
+   <!--bootstrap navBar-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+		
+      <button type="button" class=" navb-item-item btn btn-outline-secondary mx-1 " data-toggle="modal" data-target=".bd-login-modal-sm" title="">Login</button>
+	  
+      <button type="button" class="float-right navb-item btn btn-outline-secondary" data-toggle="modal" data-target=".bd-create-modal-sm" title="">Create Account</button>
+<!--login modal-->
+                <div class="modal fade bd-login-modal-sm" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog modal-sm">
+                       
+                           
+                          <form id="login" class=" modal-content" method="post"  action="phpScript" novalidate >
+                               <div class="form-control">
+                                   <div class="row">
+                                       <label for="log_username" class="col-md-4 form-label text-success">Username</label>     
+                                       <input type="text" class="col-md-7" name="username"  id="log_username"/>   
+                                   </div><!--end row-->
+                                   <div class="row">
+                                       <label for="log_pswrd" class="col-md-4 form-label text-success">Password</label>
+                                       <input type="password" id="log_pswrd" class="col-md-7" name="password"  />
+                                   </div><!--end row-->
+                                   <div class="buttonline"> 
+								   <a class="btn btn-secondary" href="main.html" role="button">Submit</a>
+
+                                       <!--<input type="submit" id="log_submit" class="submit" name="submit" value="Login" />-->
+                                   </div><!---end buttonline-->
+                              </div><!--end form control-->
+                            </form><!--end form-->
+                      
+                    </div><!--end form control-->
+               </div><!--end login-->
+			   
+			   <div class="modal fade bd-create-modal-sm" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog modal-sm">
+                       
+                           
+                          <form id="create" class=" modal-content" method="post"  action="phpScript" novalidate >
+                               <div class="form-control">
+                                   <div class="row ">
+                                       <label for="cr_username" class="col-md-4 form-label text-success">Username</label>     
+                                       <input type="text" class="col-md-7 " name="username"  id="cr_username"/>   
+                                   </div><!--end row-->
+								    <div class="row">
+                                       <label for="cr_username" class="col-md-4 form-label text-success">Email</label>     
+                                       <input type="text" class="col-md-7" name="email"  id="cr_email"/>   
+                                   </div><!--end row-->
+                                   <div class="row">
+                                       <label for="cr_pswrd" class="col-md-4 form-label text-success">Password</label>
+                                       <input type="password" id="cr_pswrd" class="col-md-7" name="password"  />
+                                   </div><!--end row-->
+								   <div class="row">
+                                       <label for="cr_pswrd" class="col-md-4 form-label text-success">Confirm</label>
+                                       <input type="password" id="confirm_pswrd" class="col-md-7" name="confirm password"  />
+                                   </div><!--end row-->
+                                   <div class="buttonline">       
+                                       <input type="submit" id="cr_submit" class="submit" name="submit" value="Create" />
+                                   </div><!---end buttonline-->
+                              </div><!--end form control-->
+                            </form><!--end form-->
+                      
+                    </div><!--end form control-->
+               </div><!--end login-->
+  
+</nav>
+   
+   </header>
+   <main class="container">
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">TODO</h1>
+    <p class="lead">Where all you do's can really get done.</p>
+  </div>
+</div>
+  </main>
+  <footer>
+	<div class="page-footer pt-5 "> 
+		<div class="container"><span>A Subsidary of <a  href = "www.pct.edu">Education Inc.</a></span> <span class= "float-right"><a href="mailto:blv3@pct.edu">Contact Us</a></span></div>
+		<!--login bootstrap-->
+		
+	</div>
+   </footer>
+   
+    <!--Bootstrap Javascript-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/validateLogin.js"></script>
+   </body>
+</html>
